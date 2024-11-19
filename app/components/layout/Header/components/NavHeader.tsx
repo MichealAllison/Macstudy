@@ -14,14 +14,12 @@ const NavHeader = () => {
   }
 
   return (
-    <div className='flex items-center bg-[#01473C] shadow-sm'>
-      <div className='container flex items-center justify-between px-4 py-5 lg:px-0'>
-        {/* Logo */}
+    <div className='flex items-center bg-[#01473C] px-4 shadow-sm'>
+      <div className='container flex items-center justify-between px-10 py-5 lg:px-0'>
         <Link href='/'>
           <Image src='/logo.svg' alt='logo' width={156} height={29} />
         </Link>
 
-        {/* Hamburger Menu (Mobile/Tablet) */}
         <div className='flex lg:hidden'>
           <button onClick={toggleMenu} className='text-white'>
             {menuOpen ? (
@@ -30,7 +28,7 @@ const NavHeader = () => {
                 alt='Close icon'
                 width={24}
                 height={24}
-                className='z-50'
+                className='z-10'
               />
             ) : (
               <Image src='/menu.svg' alt='Menu icon' width={24} height={24} />
@@ -38,12 +36,10 @@ const NavHeader = () => {
           </button>
         </div>
 
-        {/* Desktop Navigation */}
         <div className='hidden lg:flex'>
           <Navigation />
         </div>
 
-        {/* Desktop Buttons */}
         <div className='hidden space-x-2 lg:flex'>
           <Button className='font-poppins border-2 border-[#D5D42B] text-[#D5D42B]'>
             Login
@@ -54,7 +50,6 @@ const NavHeader = () => {
         </div>
       </div>
 
-      {/* Mobile/Tablet Navigation */}
       {menuOpen && (
         <div className='absolute left-0 top-0 z-20 h-screen w-full bg-[#01473C] lg:hidden'>
           <div className='flex flex-col items-center space-y-6 pt-24 text-white'>
