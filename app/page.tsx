@@ -1,9 +1,13 @@
+import FeatureSection from './components/FeatureSection/FeatureSection'
+import HeroSection from './components/HeroSection/HeroSection'
+import Testimonials from './components/Testimonials/Testimonials'
+
 export default function page() {
   return (
-    <section className='py-24'>
-      <div className='container'>
-        <h1 className='text-3xl font-bold'>MacStudy</h1>
-      </div>
-    </section>
+    <div className='container'>
+      <HeroSection />
+      <FeatureSection />
+      <Testimonials />
+    </div>
   )
 }
