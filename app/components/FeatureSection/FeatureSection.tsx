@@ -19,16 +19,16 @@ const FeatureSection = () => {
       description: 'Transparent communication between parents and schools.'
     }
   ]
+
   return (
-    <div className='mt-20 flex justify-center space-x-10'>
+    <div className='mt-20 flex flex-col items-center space-y-10 px-4 sm:px-6 md:flex-row md:space-x-6 md:space-y-0 lg:space-x-10'>
       {features.map((feature, index) => (
-        <div key={index}>
-          <FeatureCard
-            imgSrc={feature.imageSrc}
-            tittle={feature.title}
-            description={feature.description}
-          />
-        </div>
+        <FeatureCard
+          key={index}
+          imgSrc={feature.imageSrc}
+          title={feature.title}
+          description={feature.description}
+        />
       ))}
     </div>
   )

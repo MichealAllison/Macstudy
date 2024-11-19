@@ -24,14 +24,14 @@ const Testimonials = () => {
   ]
 
   return (
-    <div className='mt-20 text-center'>
+    <div className='mt-20 px-4 text-center'>
       {/* Section Header */}
-      <div>
+      <div className='space-y-4'>
         <p className='text-base font-semibold text-[#01473c]'>Testimonials</p>
-        <p className='text-3xl font-semibold text-[#01473c]'>
+        <p className='text-2xl font-semibold text-[#01473c] sm:text-3xl'>
           Every Client Matters
         </p>
-        <p className='text-base text-[#6B6B6B]'>
+        <p className='text-sm text-[#6B6B6B] sm:text-base'>
           Problems trying to resolve the conflict between the two major realms
           of Classical physics: Newtonian mechanics.
         </p>
