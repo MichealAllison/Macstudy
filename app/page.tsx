@@ -1,5 +1,6 @@
 import FeatureSection from './components/FeatureSection/FeatureSection'
 import HeroSection from './components/HeroSection/HeroSection'
+import Newsletter from './components/NewsLetter/Newsletter'
 import Testimonials from './components/Testimonials/Testimonials'
 
 export default function page() {
@@ -8,6 +9,7 @@ export default function page() {
       <HeroSection />
       <FeatureSection />
       <Testimonials />
+      <Newsletter />
     </div>
   )
 }
