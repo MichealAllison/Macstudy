@@ -13,7 +13,7 @@ const NavHeader = () => {
 
   return (
     <div className='flex items-center bg-[#01473C] px-4 shadow-sm'>
-      <div className='container flex items-center justify-between px-10 py-5 lg:px-0'>
+      <div className='container flex items-center justify-between py-5 sm:px-10 lg:px-0'>
         <Link href='/'>
           <Image src='/logo.svg' alt='logo' width={156} height={29} />
         </Link>
