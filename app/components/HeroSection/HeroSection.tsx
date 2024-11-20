@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <div className='mt-5 flex flex-col items-center justify-between space-y-6 lg:flex-row lg:space-y-0'>
       {/* Right section */}
-      <div className='w-full space-y-6 text-center lg:w-1/2 lg:text-left'>
+      <div className='w-full justify-items-center space-y-6 text-center lg:w-1/2 lg:text-left'>
         <p className='text-4xl font-semibold text-[#01473c] sm:text-5xl lg:text-5xl'>
           Empowering Education with Technology
         </p>
