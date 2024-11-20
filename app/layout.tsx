@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 
+import ReactQueryProvider from '@/context/ReactQueryProvider'
 import './globals.css'
 import Layout from './components/layout'
 
@@ -17,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang='en' className='pt-0'>
       <body>
-        <Layout>{children}</Layout>
+        <ReactQueryProvider>
+          <Layout>{children}</Layout>
+        </ReactQueryProvider>
       </body>
     </html>
   )

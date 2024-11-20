@@ -1,28 +1,28 @@
 import React from 'react'
 import TestimonialsCard from './components/TestimonialsCard'
 
-const Testimonials = () => {
-  const feedback = [
-    {
-      imgSrc: '/user1.png',
-      testimony: 'This service has been a lifesaver for my family!',
-      name: 'Gideon',
-      title: 'Parent'
-    },
-    {
-      imgSrc: '/user2.png',
-      testimony: 'I’m incredibly impressed with the level of care and support.',
-      name: 'Martha',
-      title: 'Teacher'
-    },
-    {
-      imgSrc: '/user3.png',
-      testimony: 'Truly outstanding experience. Highly recommend!',
-      name: 'John',
-      title: 'Guardian'
-    }
-  ]
+const feedback = [
+  {
+    imgSrc: '/user1.png',
+    testimony: 'This service has been a lifesaver for my family!',
+    name: 'Gideon',
+    title: 'Parent'
+  },
+  {
+    imgSrc: '/user2.png',
+    testimony: 'I’m incredibly impressed with the level of care and support.',
+    name: 'Martha',
+    title: 'Teacher'
+  },
+  {
+    imgSrc: '/user3.png',
+    testimony: 'Truly outstanding experience. Highly recommend!',
+    name: 'John',
+    title: 'Guardian'
+  }
+]
 
+const Testimonials = () => {
   return (
     <div className='mt-20 px-4 text-center'>
       {/* Section Header */}

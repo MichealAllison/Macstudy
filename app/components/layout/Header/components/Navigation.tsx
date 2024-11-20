@@ -1,7 +1,10 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
 
 import { NavLinkType } from '../types'
+import useMenuItems from '../hooks/use-menu-items'
 
 const routes = [
   { title: 'Home', href: '/' },
@@ -14,6 +17,9 @@ const routes = [
 ] satisfies NavLinkType[]
 
 const Navigation = () => {
+  const { data } = useMenuItems()
+
+  console.log(data)
   return (
     <nav className='w-full px-4 md:px-8 lg:px-12'>
       <ul className='flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-x-6 md:space-y-0'>
